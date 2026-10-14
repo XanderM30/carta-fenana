@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#180910" />
+        <meta name="description"
+            content="Una carta escrita desde el corazón para Fenana." />
+        <title>Para ti, Fenana 💗</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap"
+            rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <main class="escena">
+            <div class="resplandor" aria-hidden="true"></div>
+            <div class="particulas" aria-hidden="true"></div>
+
+            <!-- PORTADA -->
+            <section class="inicio" id="inicio" aria-labelledby="titulo">
+                <p class="etiqueta">UNA CARTA ESCRITA PARA TI</p>
+                <h1 id="titulo">Para ti, Fenana</h1>
+
+                <p class="introduccion">
+                    Hay historias que merecen un nuevo capítulo...
+                </p>
+
+                <button class="sobre" id="abrirCarta"
+                    aria-label="Abrir la carta para Fenana">
+                    <span class="sobre-fondo"></span>
+                    <span class="sobre-tapa"></span>
+                    <span class="carta-interior"></span>
+                    <span class="sello" aria-hidden="true">♥</span>
+                </button>
+
+                <p class="instruccion">Toca el sobre para comenzar</p>
+                <p class="nota-musica">
+                    Una historia, nuestros recuerdos y algo que quiero
+                    preguntarte.
+                </p>
+            </section>
+
+            <!-- HISTORIA COMPLETA -->
+            <section class="historia" id="historia" hidden>
+                <header class="cabecera-historia">
+                    <p class="etiqueta">NUESTRA HISTORIA</p>
+                    <h2>Si volviera a empezar...</h2>
+                    <p class="subtitulo">Hay algo que quiero que leas hasta el
+                        final.</p>
+
+                    <div class="reproductor">
+                        <button id="botonMusica" class="boton-musica"
+                            type="button" aria-pressed="false">
+                            <span id="iconoMusica" aria-hidden="true">♫</span>
+                            <span id="textoMusica">Reproducir canción</span>
+                        </button>
+
+                        <label class="control-volumen" for="volumen">
+                            Volumen
+                            <input id="volumen" type="range" min="0" max="1"
+                                step="0.05" value="0.45" />
+                        </label>
+                    </div>
+
+                    <audio id="cancion" preload="metadata" loop>
+                        <source
+                            src="assets\audio\LATIN MAFIA - Yo siempre contesto. (Visualizer) - LATIN MAFIA (128k).mp3"
+                            type="audio/mpeg" />
+                        Tu navegador no puede reproducir este audio.
+                    </audio>
+                    <p id="estadoMusica" class="estado-musica"
+                        aria-live="polite"></p>
+                </header>
+
+                <!-- PRIMER RECUERDO -->
+                <article class="recuerdo">
+                    <span class="numero-recuerdo">01</span>
+                    <p class="fecha">24 DE MAYO DE 2023</p>
+                    <h3>Todo comenzó con un mensaje</h3>
+
+                    <p>
+                        A veces pienso en lo curioso que es que algo tan pequeño
+                        pueda
+                        terminar significando tanto. Todo comenzó cuando
+                        respondí a un
+                        comentario tuyo en una de mis publicaciones.
+                    </p>
+
+                    <p>
+                        Me contestaste, te respondí y después la conversación se
+                        quedó ahí.
+                        En ese momento no sabía todo lo que todavía nos faltaba
+                        vivir, ni
+                        que algún día estaría escribiéndote una carta como esta.
+                    </p>
+
+                    <figure class="foto foto-mensajes">
+                        <img src="assets/fotos/Captura_Mensajes.png"
+                            alt="Captura de nuestros primeros mensajes"
+                            loading="lazy" />
+                        <figcaption>
+                            El comienzo de una historia que no imaginábamos.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <div class="separador-corazon" aria-hidden="true">♥</div>
+
+                <!-- SEGUNDO RECUERDO -->
+                <article class="recuerdo">
+                    <span class="numero-recuerdo">02</span>
+                    <p class="fecha">15 DE NOVIEMBRE DE 2023</p>
+                    <h3>Volver a intentarlo</h3>
+
+                    <p>
+                        Volví a escribirte con esos nervios de no saber si me
+                        responderías.
+                        Y esta vez sí lo hiciste. Empezamos a hablar y, poco a
+                        poco, fuiste
+                        convirtiéndote en alguien cada vez más especial para mí.
+                    </p>
+
+                    <p>
+                        Qué bonito que, entre tantas personas y tantas
+                        posibilidades,
+                        nuestras conversaciones encontraran otra oportunidad.
+                    </p>
+                </article>
+
+                <div class="separador-corazon" aria-hidden="true">♥</div>
+
+                <!-- TERCER RECUERDO -->
+                <article class="recuerdo">
+                    <span class="numero-recuerdo">03</span>
+                    <p class="fecha">5 DE ABRIL DE 2024</p>
+                    <h3>El día que te lo pregunté</h3>
+
+                    <p>
+                        Llegó el momento en que te pedí que fueras mi novia. Y
+                        desde
+                        entonces nuestra historia dejó de ser solamente una
+                        conversación
+                        para convertirse en algo que vivimos de verdad.
+                    </p>
+
+                    <figure class="foto foto-nosotros">
+                        <img src="assets\fotos\Nosotros.jpeg"
+                            alt="Una fotografía de nosotros dos"
+                            loading="lazy" />
+                        <figcaption>
+                            Un recuerdo de los muchos que guardo contigo.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <div class="separador-corazon" aria-hidden="true">♥</div>
+
+                <!-- LO QUE VIVIMOS -->
+                <article class="recuerdo">
+                    <span class="numero-recuerdo">04</span>
+                    <p class="fecha">LO QUE HEMOS VIVIDO</p>
+                    <h3>Nuestra historia no ha sido perfecta</h3>
+
+                    <p>
+                        También hubo momentos difíciles. Nos separamos, dejamos
+                        de hablar y
+                        nuestras vidas siguieron por caminos distintos durante
+                        un tiempo. No
+                        quiero fingir que eso no pasó, ni borrar una parte de
+                        nuestra
+                        historia.
+                    </p>
+
+                    <p>
+                        Pero volvimos a encontrarnos. Y hoy estamos aquí,
+                        compartiendo
+                        momentos, cariño y esa forma tan nuestra de estar
+                        juntos, aunque
+                        todavía no hayamos vuelto a ponerle oficialmente el
+                        nombre de
+                        novios.
+                    </p>
+
+                    <p>
+                        Para mí, eso hace que esta pregunta sea todavía más
+                        especial: no
+                        quiero regresar al pasado como si nada hubiera sucedido.
+                        Quiero ver
+                        qué podemos construir con todo lo que hemos aprendido.
+                    </p>
+                </article>
+
+                <div class="separador-corazon" aria-hidden="true">♥</div>
+
+                <!-- CARTA PERSONAL -->
+                <article class="carta-texto">
+                    <p class="etiqueta">ALGO QUE QUIERO DECIRTE</p>
+                    <h2>Lo que siento por ti</h2>
+
+                    <p>
+                        Fenana, si pudiera volver al día en que empezamos a
+                        hablar, volvería
+                        a escribirte. Volvería a sentir esos nervios de no saber
+                        si me
+                        responderías y esa felicidad de descubrir que, de alguna
+                        manera,
+                        nuestras vidas estaban empezando a coincidir.
+                    </p>
+
+                    <p>
+                        Hay tantas cosas de ti que me enamoran… tus ojitos
+                        rasgaditos, tu
+                        forma de ser, cómo me tratas, cómo te preocupas por mí y
+                        cómo,
+                        cuando te necesito, estás ahí. Me encantan tus besos, tu
+                        compañía y
+                        esa sensación tan bonita que tengo cuando estoy contigo.
+                    </p>
+
+                    <figure class="foto foto-fenana">
+                        <img src="assets/fotos/Ella.jpeg"
+                            alt="Una fotografía de Fenana" loading="lazy" />
+                        <figcaption>
+                            Hay cosas que las palabras apenas alcanzan a
+                            explicar.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        No quiero hablarte como si fuéramos dos personas que
+                        apenas se están
+                        conociendo, porque tú y yo sabemos lo que hemos vivido.
+                        Tenemos
+                        recuerdos hermosos, momentos complicados y una historia
+                        que ha
+                        cambiado con el tiempo. Pero lo que siento por ti sigue
+                        siendo real.
+                    </p>
+
+                    <p>
+                        No quiero volver contigo solamente para decir que otra
+                        vez somos
+                        novios. Quiero que, si los dos decidimos hacerlo, sea
+                        porque
+                        queremos construir algo bonito, cuidarnos, entendernos,
+                        aprender de
+                        lo que pasó y seguir creando recuerdos que algún día
+                        podamos mirar
+                        con una sonrisa.
+                    </p>
+
+                    <p>
+                        No te prometo una historia perfecta. Te ofrezco mis
+                        ganas de seguir
+                        intentándolo, de hablar contigo cuando algo nos duela,
+                        de celebrar
+                        contigo lo bonito y de cuidar lo que tenemos.
+                    </p>
+
+                    <p>
+                        Porque, si la vida me da la oportunidad de escribir un
+                        nuevo
+                        capítulo contigo, no quiero borrar los anteriores.
+                        Quiero
+                        conservarlos, porque también forman parte de la historia
+                        que nos
+                        trajo hasta aquí.
+                    </p>
+
+                    <p class="firma">Con todo mi corazón, para ti.</p>
+                </article>
+
+                <!-- BOTÓN PARA PASAR A LA PREGUNTA FINAL -->
+                <section class="ir-pregunta">
+                    <button class="boton-pregunta" id="irPregunta"
+                        type="button">
+                        Hay algo más que quiero preguntarte… 💌
+                    </button>
+                </section>
+
+                <footer class="pie-historia">
+                    Hecho con amor, para Fenana. <span
+                        aria-hidden="true">♥</span>
+                </footer>
+            </section>
+
+            <section class="pantalla-pregunta" id="pantallaPregunta"
+                aria-labelledby="pregunta" hidden>
+
+                <span class="corazon-final" aria-hidden="true">♥</span>
+                <p class="etiqueta">Y AHORA, MI NIÑA...</p>
+
+                <p class="antes-pregunta">
+                    Después de todo lo que hemos sido, de lo que todavía somos y
+                    de todo
+                    lo que sueño que podamos llegar a ser...
+                </p>
+
+                <h2 id="pregunta">
+                    Fenana, ojitos bonitos…
+                    <br />¿quieres volver a ser mi novia?
+                </h2>
+
+                <p class="respuesta-intro">
+                    No te lo pregunto porque quiera regresar al pasado.
+                    Te lo pregunto porque quiero seguir escribiendo nuestra
+                    historia contigo.
+                </p>
+
+                <div class="botones-respuesta" id="botonesRespuesta">
+                    <button class="boton-si" id="respuestaSi" type="button">
+                        Sí, quiero 💗
+                    </button>
+                    
+                    <button class="boton-hablar" id="respuestaHablar"
+                        type="button">
+                        Quiero decirte algo 💌
+                    </button>
+                </div>
+
+                <div class="respuesta-final" id="respuestaFinal"
+                    aria-live="polite" hidden>
+                    <p class="respuesta-titulo" id="respuestaTitulo"></p>
+                    <p id="respuestaDetalle"></p>
+                </div>
+
+                <p class="posdata">
+                    Sea cual sea tu respuesta, quería que supieras lo importante
+                    que eres para mí.
+                </p>
+            </section>
+
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
