@@ -95,10 +95,11 @@ cancion.addEventListener("error", () => {
 
 // Respuesta afirmativa.
 respuestaSi.addEventListener("click", () => {
-  respuestaTitulo.textContent = "Entonces, escribamos este capítulo juntos ❤️";
+  respuestaTitulo.textContent = "Entonces, escribamos este capítulo juntos 💗";
   respuestaDetalle.textContent =
     "Gracias por darme esta oportunidad. Quiero que lo nuestro siga creciendo, " +
     "que nos cuidemos y que construyamos algo bonito, a nuestra manera y a nuestro tiempo.";
+    "Dame un beso si dices que sí, y vamos a escribir nuestra historia juntos. 💌";
 
   mostrarRespuesta();
 });
